@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1788,2376</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1788,2821</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -104,34 +104,32 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="628,2311" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="716,2756" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="CapturaCEPS" />
       <Variable x:TypeArguments="x:String" Name="Email" />
+      <Variable x:TypeArguments="x:String" Name="saidahttp" />
+      <Variable x:TypeArguments="njl:JObject" Name="saidaJson" />
+      <Variable x:TypeArguments="sd:DataTable" Name="TabelaExcel" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Busca CEP" sap:VirtualizedContainerService.HintSize="586,2018" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Busca CEP" sap:VirtualizedContainerService.HintSize="674,2295" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="552,1798" sap2010:WorkflowViewState.IdRef="Sequence_1">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="sd:DataTable" Name="TabelaExcel" />
-              <Variable x:TypeArguments="njl:JObject" Name="saidaJson" />
-              <Variable x:TypeArguments="x:String" Name="saidahttp" />
-            </Sequence.Variables>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="640,2075" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Digite um'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,224" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Text="Sorocaba[k(enter)]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Digite um'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="598,224" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Text="Sorocaba[k(enter)]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://buscacepinter.correios.com.br/app/endereco/index.php" DesignTimeRectangle="514, 481, 511, 53" ElementType="InputBox" FriendlyName="'MG'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='' aaname='Digite um CEP ou um Endereço:' /&gt;" Guid="319e996c-2381-4db2-88e1-01d0fe60b926" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAgMAAAA5CAYAAACrpSi1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUiSURBVHhe7d3RS1tnHMbx0P5T/Xd66U1hlhIKo+gII6CwFBTqiCvihROMkFLJRenaiypr2ilUlomg1BYJomzTjVkN4bfze897mpOfkbXiWfG83w88FN+cXj9PzzmmBUnZ2DuSm3Ov5frtRSl8VSOEEEJIjqL9rj2vfZ/2cQxMv3wr14YZAYQQQkjeo32vvZ9wY0APBl1MCCGEkPwmGQQFvVXAHQFCCCEkvGj/6w4o6LMD++GNyjNZarXlQ6frFgMAALi6tM+117Xfbee7HWBfFtQLO11GAAAAeaP9bgeB2wHpA40uBwAAkE/a87b7z4wBHg0AAJBf2vO2+8+MAQAAkG+2+xkDAAAExnY/YwAAgMDY7mcMAAAQGNv9jAEAAAJju58xAABAYGz3MwYAAAiM7X7GAAAAgbHdzxgAACAwtvsZAwAABMZ2P2MAAIDA2O5nDAAAEBjb/YwBAAACY7s/+zHQbcrMnUlZOfE/p500pVo85zPVOZDm40mZ+OaWjNwZijMyKg8Wm9Lu+GsAAMBnsd2f/Rho12U8KvHqL6f+IGV9Kir4YZnf9D+ndHYbMnHXD4AzGfx3AADAf7Pdn/kYOH41GRf4w6Yc+7NEa2HYfTbx4tCfeH8+l4liXPzl72uyuvuPJDcCjv9+J621Ldn3PwMAgM9juz/zMbD9qBiPgeKUrHb9obMl9ZL/l/7cuj9Tp7Ly0A+B2TX5y58CAIDLYbs/4zFwKE8nfeFHmUl3/m7NPT5wn5Xr8t4fy8myVPXs3qy86RsPAADgMtjuz3gMbMj8vajY71ekGv1Zmu+tgfaT0WgIjEp1Wu8cTEkzKf5ff4gHQt/dAgAAcFls92c7Bo6ey0RU7KWFdXkzP+z+td9yH/g7BmMN2XbvFBSlvuM+8C8VDknlSdsf9MQDIvp7LqOytOc/AAAAn8x2f7ZjwP8r370g+NuslJLfAvCPAsYfvxPZqUk5uUYxBgAAyJTt/kzHwP5P30al7QdAd909MigtbPjfMPha6rt6rt9DEJV78ljAjwG97jyrs4wBAAAuynZ/pmMgLu3elwq5RwWlH6Wu56WabLvTtiyVo5+/a8S/LugfLeh1m+e8QMgYAADg4mz3ZzgGopIfS5d+xD0q0CIfkvKjLX8o0pzRs+QlwkN5ej++ZtCjAsUYAADg4mz3ZzcGktv/08u9Lxvyjwr6XhiMxO8CpM52er92OD63LJu/+28v7J7K/mZDHowwBgAAuCjb/dmNAf81xOk7ACp+VJC6W6D8ewLVV72vLH7/ouJeLNTzgblbkZUjfzEAAPhktvszGwPJ1xDPrPmDRFT8Zfty4EFDKtG19qXBzkFTapOjUkr+j4LiLSmPjUnt5y35g/+oCACAC7Hdn+kLhAN1T+WYIgcA4Iux3f//jwEAAPBF2e5nDAAAEBjb/YwBAAACY7ufMQAAQGBs9zMGAAAIjO1+xgAAAIGx3c8YAAAgMLb7GQMAAATGdj9jAACAwNjuZwwAABAY2/2MAQAAAmO7nzEAAEBgbPczBgAACIzt/jNj4EOn6y8FAAB5oz1vu//MGFhqtf3lAAAgb7TnbfcXrt9e7Du4UXkmnS53BwAAyBvtd+35dO+7HXBz7nXfoUYv1OXAIwMAAK4+7XPtdTsENG4HbOwdybXh/rsDhBBCCMl/tP91BxR0MUy/fDvwIkIIIYTkN9r/yo0BpQfcISCEEELyH+37ZAioj2NA6a0CfXZgXyokhBBCyNWP9rv2vPZ9j8i/oD9NM4nruK0AAAAASUVORK5CYII=" InformativeScreenshot="e7a7822c92b575f28486b888a0d88d63.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Busca CEP' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -148,29 +146,25 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[CapturaCEPS]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CEP'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="510,160" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="100" ScopeIdentifier="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Version="V1">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[CapturaCEPS]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CEP'&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='4' /&gt;&lt;/column&gt;&lt;/extract&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="598,160" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="100" ScopeIdentifier="3ee23aef-7c1d-450e-a8de-9d543f0b742b" Version="V1">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="512, 544, 869, 1730" FriendlyName="'Abaeté/MG35620-000Abaet…'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="f7480f34-054e-4136-98ad-062ec132eca2" InformativeScreenshot="881d4cd59bbb70d1e2595f35ff80e154.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Busca CEP' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:BuildDataTable DataTable="[TabelaExcel]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;CEP&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;CIDADE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;BAIRRO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;RUA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CapturaCEPS]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,1141" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:BuildDataTable DataTable="[TabelaExcel]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="598,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;CEP&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;CIDADE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;BAIRRO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;RUA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CapturaCEPS]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="598,1418" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1021" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="saidahttp" />
-                      <Variable x:TypeArguments="njl:JObject" Name="saidaJson" />
-                    </Sequence.Variables>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="564,1298" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;https://ws.apicep.com/cep/&quot;+CurrentRow(&quot;CEP&quot;).ToString+&quot;.json&quot;]" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[saidahttp]" TimeoutMS="6000">
+                    <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[&quot;https://ws.apicep.com/cep/&quot;+CurrentRow(&quot;CEP&quot;).ToString+&quot;.json&quot;]" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[saidahttp]" TimeoutMS="6000">
                       <ui:HttpClient.Attachments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.Attachments>
@@ -187,8 +181,8 @@
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.UrlSegments>
                     </ui:HttpClient>
-                    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[saidaJson]" JsonString="[saidahttp]" />
-                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,286" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="522,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[saidaJson]" JsonString="[saidahttp]" />
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,563" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                       <TryCatch.Try>
                         <If Condition="[saidaJson(&quot;address&quot;).ToString = &quot;&quot; or saidaJson(&quot;address&quot;).ToString = nothing]" sap:VirtualizedContainerService.HintSize="484,316" sap2010:WorkflowViewState.IdRef="If_1">
                           <sap:WorkflowViewStateService.ViewState>
@@ -219,10 +213,10 @@
                         </If>
                       </TryCatch.Try>
                       <TryCatch.Catches>
-                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,108" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="488,25" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -235,8 +229,8 @@
                         </Catch>
                       </TryCatch.Catches>
                     </TryCatch>
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{saidaJson(&quot;code&quot;).ToString, saidaJson(&quot;city&quot;).ToString, saidaJson(&quot;district&quot;).ToString, saidaJson(&quot;address&quot;).ToString}]" DataTable="[TabelaExcel]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                    <ui:WriteCsvFile AddHeaders="True" DataTable="[TabelaExcel]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\lucas.marte\Downloads\Treinamento\Arquivo.CSV" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{saidaJson(&quot;code&quot;).ToString, saidaJson(&quot;city&quot;).ToString, saidaJson(&quot;district&quot;).ToString, saidaJson(&quot;address&quot;).ToString}]" DataTable="[TabelaExcel]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="522,197" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:WriteCsvFile AddHeaders="True" DataTable="[TabelaExcel]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\lucas.marte\Downloads\Treinamento\Arquivo.CSV" sap:VirtualizedContainerService.HintSize="522,164" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
@@ -254,12 +248,23 @@
         <uix:TargetApp Area="-1928, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACusAAArrAYKLDVoAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAACGUlEQVQ4T2P4//8/RRirICkYqyAMM9hnHGWwSvrPYBz1n0E74D+zWfR/vhkXz6GoQeagYwa7DHOgAb8ZTKL/M2j4/gMa8E9s9b1/XLNuNsLVIGvAhhnMEyMZjCL/M2j5/xOasO+f1LZn/0VWP/jP1n/RGyyPrgEbZlT16OLOmfFfZNGlf6KLL/+X3PTov9Dye+/Y+y9GwxV9P8suCsQHfl9iufb3KtO1f9cYr/2/xnD//zOGfIaul578Hdv/C07Y91949un/Ysuv/5fY+Oi/4LL7s+AGvD3If+rzSa7/P86z/f99mfn/36uM///fYbjqNHmdNnvx0m+81Sv/87dv/S806eB/kXnn/outuNEE0gfWfGe1XOezHWL/3x/i+//lFOf/nxdY//+7yvhp7WFnLYaY6bc50yf95y5e8J+3bvV/ga4d/4WmHD4Cs5jh8VaJRVcWqv6/u1b2/4vdIv8/HOH9D/TKv/+vGVwYrCcXsYTU3WZP6L7MmT39MnfZ4st8jet38rVsEoQb8OMSW9ijTVJvLs5X//9gg/T/90cE/12fJ/J/Q6ZqP0wRPgwmfl5idb+7Rvb/taVq/28vFfu3MVPu364q5f+HWlXj0DWgYzjj00me2rurpP9tTJMEGiD/f3eV0v/DHWp/T07WtEbWgI5ROG928xzYlCH5cVO23FugAW+BBnw6NVlzF7IadIxVkBSMVZB4/J8BACdcqL5abFdoAAAAAElFTkSuQmCC" InformativeScreenshot="9dea89cc61315e5ed7702f119a66f8f9.png" Selector="&lt;html app='chrome.exe' title='Busca CEP' /&gt;" Url="https://buscacepinter.correios.com.br/app/endereco/index.php" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send SMTP Mail Message" Email="[Login]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="586,161" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[Senha]" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Anexo Endereços" To="[Email]">
-      <ui:SendMail.Files>
-        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-          <InArgument x:TypeArguments="x:String">C:\Users\lucas.marte\Downloads\Treinamento\Arquivo.CSV</InArgument>
-        </scg:List>
-      </ui:SendMail.Files>
-    </ui:SendMail>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="674,329" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="376,251" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:SendMail Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send SMTP Mail Message" Email="[Login]" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,159" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[Senha]" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="Anexo Endereços" To="[Email]">
+            <ui:SendMail.Files>
+              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                <InArgument x:TypeArguments="x:String">C:\Users\lucas.marte\Downloads\Treinamento\Arquivo.CSV</InArgument>
+              </scg:List>
+            </ui:SendMail.Files>
+          </ui:SendMail>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
   </Sequence>
 </Activity>
